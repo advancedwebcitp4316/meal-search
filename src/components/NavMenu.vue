@@ -1,7 +1,9 @@
 <template>
   <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/other">Other</RouterLink>
+    <RouterLink :to="{name: 'Home'}">Home</RouterLink>
+    <RouterLink :to="{name: 'MealsByName'}">Search By Name</RouterLink>
+    <RouterLink :to="{name: 'MealsByLetter'}">Search By Letter</RouterLink>
+    <RouterLink :to="{name: 'MealsByIngredients'}">Search By Ingredient</RouterLink>
   </nav>
 </template>
 
