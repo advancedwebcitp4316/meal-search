@@ -36,7 +36,7 @@ const searchIngredients = computed(() => {
         <router-link 
             v-for="ingredient in searchIngredients" 
             :key="ingredient.idIngredient" 
-            :to="{ name: 'MealsByIngredients', params: {Ingredient: ingredient.strIngredient}}" 
+            :to="{ name: 'MealsByIngredients', params: {ingredient: ingredient.strIngredient}}" 
             class="bg-white rounded p-3 mb-3 shadow block">
             {{ ingredient.strIngredient }}
         </router-link>
